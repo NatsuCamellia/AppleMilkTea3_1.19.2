@@ -62,7 +62,6 @@ public class AppleMilkTea3
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINT_CROP.get(), RenderType.cutout());
         }
     }
 }
