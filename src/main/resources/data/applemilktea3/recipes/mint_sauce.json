@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "applemilktea3:mint"
+    }
+  ],
+  "result": {
+    "item": "applemilktea3:mint_sauce"
+  }
+}

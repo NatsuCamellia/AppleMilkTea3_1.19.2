@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "applemilktea3:block/wood_box_oak_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "applemilktea3:block/wood_box_oak"
+    },
+    "axis=z": {
+      "model": "applemilktea3:block/wood_box_oak_horizontal",
+      "x": 90
+    }
+  }
+}

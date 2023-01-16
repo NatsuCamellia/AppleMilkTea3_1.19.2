@@ -1,0 +1,15 @@
+{
+  "itemGroup.applemilktea3_tab": "AppleMilkTea 3",
+
+  "item.applemilktea3.mint": "Mint",
+  "item.applemilktea3.mint_seeds": "Mint Seeds",
+  "item.applemilktea3.mint_sauce": "Mint Sauce",
+  "item.applemilktea3.condensed_milk": "Condensed Milk",
+
+  "block.applemilktea3.wood_box_acacia": "Acacia Log Box",
+  "block.applemilktea3.wood_box_birch": "Birch Log Box",
+  "block.applemilktea3.wood_box_dark_oak": "Dark Oak Log Box",
+  "block.applemilktea3.wood_box_jungle": "Jungle Log Box",
+  "block.applemilktea3.wood_box_oak": "Oak Log Box",
+  "block.applemilktea3.wood_box_spruce": "Spruce Log Box"
+}

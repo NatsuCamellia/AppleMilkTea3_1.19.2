@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "applemilktea3:block/wood_box_dark_oak_top",
+    "side": "applemilktea3:block/wood_box_dark_oak_side"
+  }
+}

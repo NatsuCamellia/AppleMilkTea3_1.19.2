@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "applemilktea3:block/wood_box_jungle_top",
+    "side": "applemilktea3:block/wood_box_jungle_side"
+  }
+}
