@@ -11,5 +11,7 @@
   "block.applemilktea3.wood_box_dark_oak": "Dark Oak Log Box",
   "block.applemilktea3.wood_box_jungle": "Jungle Log Box",
   "block.applemilktea3.wood_box_oak": "Oak Log Box",
-  "block.applemilktea3.wood_box_spruce": "Spruce Log Box"
+  "block.applemilktea3.wood_box_spruce": "Spruce Log Box",
+
+  "entity.minecraft.villager.applemilktea3.cafe_master": "Cafe Master"
 }
