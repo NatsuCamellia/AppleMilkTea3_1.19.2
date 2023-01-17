@@ -25,6 +25,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3f).build()).tab(ModCreativeModeTab.AMT3_TAB)));
     public static final RegistryObject<Item> YUZU_MARMALADE = ITEMS.register("yuzu_marmalade",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.AMT3_TAB)));
+    public static final RegistryObject<Item> YUZU_CANDY = ITEMS.register("yuzu_candy",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3f).build()).tab(ModCreativeModeTab.AMT3_TAB)));
 
     public static final RegistryObject<Item> MINT_SAUCE = ITEMS.register("mint_sauce",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.AMT3_TAB)));
