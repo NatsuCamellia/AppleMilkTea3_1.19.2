@@ -2,10 +2,9 @@ package applemilktea3.core;
 
 import applemilktea3.init.ModBlocks;
 import applemilktea3.init.ModItems;
+import applemilktea3.init.ModPaintings;
 import applemilktea3.init.ModVillagers;
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,6 +37,7 @@ public class AppleMilkTea3
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModPaintings.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
