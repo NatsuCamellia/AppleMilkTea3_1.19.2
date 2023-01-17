@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "applemilktea3:mint_sauce"
+  },
+  "result": {
+    "count": 4,
+    "item": "applemilktea3:mint_candy"
+  }
+}
