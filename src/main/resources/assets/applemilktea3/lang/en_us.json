@@ -5,6 +5,7 @@
   "item.applemilktea3.mint_seeds": "Mint Seeds",
   "item.applemilktea3.mint_sauce": "Mint Sauce",
   "item.applemilktea3.condensed_milk": "Condensed Milk",
+  "item.applemilktea3.yuzu": "Yuzu",
 
   "block.applemilktea3.wood_box_acacia": "Acacia Log Box",
   "block.applemilktea3.wood_box_birch": "Birch Log Box",
@@ -12,6 +13,9 @@
   "block.applemilktea3.wood_box_jungle": "Jungle Log Box",
   "block.applemilktea3.wood_box_oak": "Oak Log Box",
   "block.applemilktea3.wood_box_spruce": "Spruce Log Box",
+  "block.applemilktea3.yuzu_log": "Yuzu Log",
+  "block.applemilktea3.yuzu_leaves": "Yuzu Leaves",
+  "block.applemilktea3.yuzu_sapling": "Yuzu Sapling",
 
   "entity.minecraft.villager.applemilktea3.cafe_master": "Cafe Master"
 }

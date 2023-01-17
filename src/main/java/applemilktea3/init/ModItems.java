@@ -2,6 +2,7 @@ package applemilktea3.init;
 
 import applemilktea3.common.item.ModCreativeModeTab;
 import applemilktea3.core.AppleMilkTea3;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +27,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> MINT = ITEMS.register("mint",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.AMT3_TAB)));
+    public static final RegistryObject<Item> YUZU = ITEMS.register("yuzu",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.3f).build()).tab(ModCreativeModeTab.AMT3_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

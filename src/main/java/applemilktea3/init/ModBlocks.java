@@ -1,15 +1,23 @@
 package applemilktea3.init;
 
 import applemilktea3.common.block.MintCropBlock;
+import applemilktea3.common.block.ModFlammableRotatedPillarBlock;
 import applemilktea3.common.block.WoodBoxBlock;
 import applemilktea3.common.item.ModCreativeModeTab;
+import applemilktea3.common.worldgen.feature.tree.YuzuTreeGrower;
 import applemilktea3.core.AppleMilkTea3;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,6 +38,29 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MINT_CROP = BLOCKS.register("mint_crop",
             () -> new MintCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> YUZU_LOG = registerBlock("yuzu_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).requiresCorrectToolForDrops()), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> YUZU_LEAVES = registerBlock("yuzu_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+            }, ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> YUZU_SAPLING = registerBlock("yuzu_sapling",
+            () -> new SaplingBlock(new YuzuTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.AMT3_TAB);
+
 
     private static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<Block> toReturn = BLOCKS.register(name, block);

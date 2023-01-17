@@ -5,10 +5,16 @@
   "item.applemilktea3.mint_seeds": "薄荷種子",
   "item.applemilktea3.mint_sauce": "薄荷醬",
   "item.applemilktea3.condensed_milk": "煉乳",
+  "item.applemilktea3.yuzu": "柚子",
   "block.applemilktea3.wood_box_acacia": "相思原木箱",
   "block.applemilktea3.wood_box_birch": "樺木原木箱",
   "block.applemilktea3.wood_box_dark_oak": "黑橡木原木箱",
   "block.applemilktea3.wood_box_jungle": "叢林木原木箱",
   "block.applemilktea3.wood_box_oak": "橡木原木箱",
-  "block.applemilktea3.wood_box_spruce": "杉木原木箱"
+  "block.applemilktea3.wood_box_spruce": "杉木原木箱",
+  "block.applemilktea3.yuzu_log": "柚子原木",
+  "block.applemilktea3.yuzu_leaves": "柚子樹葉",
+  "block.applemilktea3.yuzu_sapling": "柚子樹苗",
+
+  "entity.minecraft.villager.applemilktea3.cafe_master": "咖啡師"
 }
