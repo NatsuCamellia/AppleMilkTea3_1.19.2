@@ -21,6 +21,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> CONDENSED_MILK = ITEMS.register("condensed_milk",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.AMT3_TAB)));
+    public static final RegistryObject<Item> YUZU_MARMALADE = ITEMS.register("yuzu_marmalade",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.AMT3_TAB)));
 
     public static final RegistryObject<Item> MINT_SAUCE = ITEMS.register("mint_sauce",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.AMT3_TAB)));
