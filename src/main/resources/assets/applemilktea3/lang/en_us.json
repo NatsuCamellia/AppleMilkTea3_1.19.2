@@ -21,5 +21,15 @@
   "block.applemilktea3.yuzu_leaves": "Yuzu Leaves",
   "block.applemilktea3.yuzu_sapling": "Yuzu Sapling",
 
+  "block.applemilktea3.vegibag_potato": "Potato Bag",
+  "block.applemilktea3.vegibag_carrot": "Carrot Bag",
+  "block.applemilktea3.vegibag_pumpkin": "Pumpkin Bag",
+  "block.applemilktea3.vegibag_seed": "Seed Bag",
+  "block.applemilktea3.vegibag_sugarcane": "Sugar Cane Bag",
+  "block.applemilktea3.vegibag_cactus": "Cactus Bag",
+  "block.applemilktea3.vegibag_cocoa": "Cocoa Bag",
+  "block.applemilktea3.vegibag_wart": "Wart Bag",
+  "block.applemilktea3.vegibag_sugar": "Sugar Bag",
+
   "entity.minecraft.villager.applemilktea3.cafe_master": "Cafe Master"
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "applemilktea3:vegibag_potato"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:potato"
+  }
+}

@@ -12,12 +12,10 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.block.SaplingBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -35,6 +33,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> WOOD_BOX_JUNGLE = registerBlock("wood_box_jungle", () -> new WoodBoxBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)), ModCreativeModeTab.AMT3_TAB);
     public static final RegistryObject<Block> WOOD_BOX_OAK = registerBlock("wood_box_oak", () -> new WoodBoxBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)), ModCreativeModeTab.AMT3_TAB);
     public static final RegistryObject<Block> WOOD_BOX_SPRUCE = registerBlock("wood_box_spruce", () -> new WoodBoxBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)), ModCreativeModeTab.AMT3_TAB);
+
+    public static final RegistryObject<Block> VEGIBAG_POTATO = registerBlock("vegibag_potato", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_CARROT = registerBlock("vegibag_carrot", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_PUMPKIN = registerBlock("vegibag_pumpkin", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_SEED = registerBlock("vegibag_seed", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_SUGARCANE = registerBlock("vegibag_sugarcane", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_CACTUS = registerBlock("vegibag_cactus", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_COCOA = registerBlock("vegibag_cocoa", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_WART = registerBlock("vegibag_wart", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> VEGIBAG_SUGAR = registerBlock("vegibag_sugar", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).destroyTime(0F)), ModCreativeModeTab.AMT3_TAB);
 
     public static final RegistryObject<Block> MINT_CROP = BLOCKS.register("mint_crop",
             () -> new MintCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));

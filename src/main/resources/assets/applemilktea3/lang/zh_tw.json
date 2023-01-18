@@ -19,6 +19,15 @@
   "block.applemilktea3.yuzu_log": "柚子原木",
   "block.applemilktea3.yuzu_leaves": "柚子樹葉",
   "block.applemilktea3.yuzu_sapling": "柚子樹苗",
+  "block.applemilktea3.vegibag_potato": "馬鈴薯袋",
+  "block.applemilktea3.vegibag_carrot": "胡蘿蔔袋",
+  "block.applemilktea3.vegibag_pumpkin": "南瓜袋",
+  "block.applemilktea3.vegibag_seed": "小麥種子袋",
+  "block.applemilktea3.vegibag_sugarcane": "甘蔗袋",
+  "block.applemilktea3.vegibag_cactus": "仙人掌袋",
+  "block.applemilktea3.vegibag_cocoa": "可可袋",
+  "block.applemilktea3.vegibag_wart": "地獄疙瘩袋",
+  "block.applemilktea3.vegibag_sugar": "砂糖袋",
 
   "entity.minecraft.villager.applemilktea3.cafe_master": "咖啡師"
 }
