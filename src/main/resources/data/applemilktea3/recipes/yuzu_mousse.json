@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "applemilktea3:yuzu"
+    }
+  ],
+  "result": {
+    "item": "applemilktea3:yuzu_mousse"
+  }
+}
