@@ -1,9 +1,6 @@
 package applemilktea3.init;
 
-import applemilktea3.common.block.MintCropBlock;
-import applemilktea3.common.block.ModFlammableRotatedPillarBlock;
-import applemilktea3.common.block.TeaTreeBlock;
-import applemilktea3.common.block.WoodBoxBlock;
+import applemilktea3.common.block.*;
 import applemilktea3.common.item.ModCreativeModeTab;
 import applemilktea3.common.worldgen.feature.tree.TeaTreeGrower;
 import applemilktea3.common.worldgen.feature.tree.YuzuTreeGrower;
@@ -80,6 +77,8 @@ public class ModBlocks {
         registerBlockItem(name, toReturn, ModCreativeModeTab.AMT3_TAB);
         return toReturn;
     }
+
+    private static final RegistryObject<Block> MONITOR = registerBlock("monitor", () -> new MonitorBlock(BlockBehaviour.Properties.of(Material.STONE).noOcclusion()), ModCreativeModeTab.AMT3_TAB);
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, Supplier<T> block, CreativeModeTab tab) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

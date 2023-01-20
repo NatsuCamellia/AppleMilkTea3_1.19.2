@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "applemilktea3:block/monitor",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "applemilktea3:block/monitor"
+    },
+    "facing=south": {
+      "model": "applemilktea3:block/monitor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "applemilktea3:block/monitor",
+      "y": 270
+    }
+  }
+}
