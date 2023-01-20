@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "applemilktea3:block/tea_sapling"
+  },
+  "render_type": "cutout"
+}

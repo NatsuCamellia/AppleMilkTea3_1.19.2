@@ -49,6 +49,8 @@ public class ModItems {
     public static final RegistryObject<Item> TOFFEE_APPLE_GOLDEN = ITEMS.register("toffee_apple_golden", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3f).build()).tab(ModCreativeModeTab.AMT3_TAB)));
     public static final RegistryObject<Item> TOFFEE_APPLE_GREEN = ITEMS.register("toffee_apple_green", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.3f).build()).tab(ModCreativeModeTab.AMT3_TAB)));
 
+    public static final RegistryObject<Item> TEA_LEAF = ITEMS.register("tea_leaf", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.AMT3_TAB)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

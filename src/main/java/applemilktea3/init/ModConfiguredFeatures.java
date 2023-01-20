@@ -3,10 +3,14 @@ package applemilktea3.init;
 import applemilktea3.core.AppleMilkTea3;
 import net.minecraft.core.Registry;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
+import net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -31,11 +35,23 @@ public class ModConfiguredFeatures {
                             new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                             new TwoLayersFeatureSize(0, 1, 1)
                     ).build()));
+
     public static final RegistryObject<ConfiguredFeature<?, ?>> YUZU_SPAWN =
             CONFIGURED_FEATURE.register("yuzu_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
                             ModPlacedFeatures.YUZU_CHECKED.getHolder().get(),
                             0.5f)), ModPlacedFeatures.YUZU_CHECKED.getHolder().get()
+                    )));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> TEA_TREE =
+            CONFIGURED_FEATURE.register("tea_tree", () ->
+                    new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.TEA_TREE.get()))));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> TEA_TREE_SPAWN =
+            CONFIGURED_FEATURE.register("tea_tree_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
+                            ModPlacedFeatures.TEA_TREE_CHECKED.getHolder().get(),
+                            0.5f)), ModPlacedFeatures.TEA_TREE_CHECKED.getHolder().get()
                     )));
 
     public static void register(IEventBus eventBus) {

@@ -10,6 +10,7 @@
   "item.applemilktea3.yuzu_marmalade": "Yuzu Marmalade",
   "item.applemilktea3.yuzu_candy": "Yuzu Candy",
   "item.applemilktea3.yuzu": "Yuzu",
+  "item.applemilktea3.tea_leaf": "Tea Leaf",
 
   "item.applemilktea3.baked_apple": "Baked Apple",
   "item.applemilktea3.apple_tart": "Apple Tart",
@@ -42,6 +43,9 @@
   "block.applemilktea3.vegibag_cocoa": "Cocoa Bag",
   "block.applemilktea3.vegibag_wart": "Wart Bag",
   "block.applemilktea3.vegibag_sugar": "Sugar Bag",
+
+  "block.applemilktea3.tea_tree": "Tea Tree",
+  "block.applemilktea3.tea_sapling": "Tea Sapling",
 
   "entity.minecraft.villager.applemilktea3.cafe_master": "Cafe Master"
 }

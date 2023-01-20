@@ -22,6 +22,13 @@ public class ModPlacedFeatures {
             () -> new PlacedFeature(ModConfiguredFeatures.YUZU_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
                             PlacementUtils.countExtra(3, 0.1F, 2))));
 
+    public static final RegistryObject<PlacedFeature> TEA_TREE_CHECKED = PLACED_FEATURE.register("tea_tree_checked",
+            () -> new PlacedFeature(ModConfiguredFeatures.TEA_TREE.getHolder().get(),
+                    List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.TEA_SAPLING.get()))));
+
+    public static final RegistryObject<PlacedFeature> TEA_TREE_PLACED = PLACED_FEATURE.register("tea_tree_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.TEA_TREE_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(1, 0.05F, 2))));
     public static void register(IEventBus eventBus) {
         PLACED_FEATURE.register(eventBus);
     }

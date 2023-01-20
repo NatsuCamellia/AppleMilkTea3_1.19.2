@@ -2,8 +2,10 @@ package applemilktea3.init;
 
 import applemilktea3.common.block.MintCropBlock;
 import applemilktea3.common.block.ModFlammableRotatedPillarBlock;
+import applemilktea3.common.block.TeaTreeBlock;
 import applemilktea3.common.block.WoodBoxBlock;
 import applemilktea3.common.item.ModCreativeModeTab;
+import applemilktea3.common.worldgen.feature.tree.TeaTreeGrower;
 import applemilktea3.common.worldgen.feature.tree.YuzuTreeGrower;
 import applemilktea3.core.AppleMilkTea3;
 import net.minecraft.core.BlockPos;
@@ -68,8 +70,11 @@ public class ModBlocks {
             }, ModCreativeModeTab.AMT3_TAB);
     public static final RegistryObject<Block> YUZU_SAPLING = registerBlock("yuzu_sapling",
             () -> new SaplingBlock(new YuzuTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> TEA_SAPLING = registerBlock("tea_sapling",
+            () -> new SaplingBlock(new TeaTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.AMT3_TAB);
 
-
+    public static final RegistryObject<Block> TEA_TREE = registerBlock("tea_tree",
+            () -> new TeaTreeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES), ModItems.TEA_LEAF), ModCreativeModeTab.AMT3_TAB);
     private static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<Block> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, ModCreativeModeTab.AMT3_TAB);

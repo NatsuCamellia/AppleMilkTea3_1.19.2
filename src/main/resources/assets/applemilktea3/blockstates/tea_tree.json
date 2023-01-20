@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "age=0": { "model": "applemilktea3:block/tea_tree_stage0" },
+    "age=1": { "model": "applemilktea3:block/tea_tree_stage1" }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_mountain",
+  "features": "applemilktea3:tea_tree_placed",
+  "step": "vegetal_decoration"
+}

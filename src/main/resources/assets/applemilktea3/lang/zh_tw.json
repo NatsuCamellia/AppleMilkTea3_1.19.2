@@ -10,6 +10,8 @@
   "item.applemilktea3.yuzu_marmalade": "橘皮果醬",
   "item.applemilktea3.yuzu_candy": "柚子糖",
   "item.applemilktea3.yuzu": "柚子",
+  "item.applemilktea3.tea_leaf": "茶葉",
+
   "item.applemilktea3.baked_apple": "烤蘋果",
   "item.applemilktea3.apple_tart": "蘋果餡餅",
   "item.applemilktea3.yuzu_mousse": "柚子慕斯蛋糕",
@@ -39,6 +41,9 @@
   "block.applemilktea3.vegibag_cocoa": "可可袋",
   "block.applemilktea3.vegibag_wart": "地獄疙瘩袋",
   "block.applemilktea3.vegibag_sugar": "砂糖袋",
+
+  "block.applemilktea3.tea_tree": "茶樹",
+  "block.applemilktea3.tea_sapling": "茶樹樹苗",
 
   "entity.minecraft.villager.applemilktea3.cafe_master": "咖啡師"
 }
