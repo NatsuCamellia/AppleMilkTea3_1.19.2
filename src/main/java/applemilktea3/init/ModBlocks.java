@@ -79,6 +79,7 @@ public class ModBlocks {
     }
 
     private static final RegistryObject<Block> MONITOR = registerBlock("monitor", () -> new MonitorBlock(BlockBehaviour.Properties.of(Material.STONE).noOcclusion()), ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> PC_CHAIR = registerBlock("pc_chair", () -> new PCChairBlock(BlockBehaviour.Properties.of(Material.STONE).noOcclusion()), ModCreativeModeTab.AMT3_TAB);
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, Supplier<T> block, CreativeModeTab tab) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

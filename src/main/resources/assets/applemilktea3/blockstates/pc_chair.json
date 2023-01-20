@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "applemilktea3:block/pc_chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "applemilktea3:block/pc_chair"
+    },
+    "facing=south": {
+      "model": "applemilktea3:block/pc_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "applemilktea3:block/pc_chair",
+      "y": 270
+    }
+  }
+}
