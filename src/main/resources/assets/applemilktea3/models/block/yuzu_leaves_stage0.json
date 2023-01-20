@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "applemilktea3:block/yuzu_leaves_stage0"
+  },
+  "render_type": "cutout"
+}

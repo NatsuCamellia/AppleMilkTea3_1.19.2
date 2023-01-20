@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "applemilktea3:block/yuzu_leaves" }
+    "age=0": { "model": "applemilktea3:block/yuzu_leaves_stage0" },
+    "age=1": { "model": "applemilktea3:block/yuzu_leaves_stage1" },
+    "age=2": { "model": "applemilktea3:block/yuzu_leaves_stage2" }
   }
 }

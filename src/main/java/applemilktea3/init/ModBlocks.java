@@ -48,23 +48,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> YUZU_LOG = registerBlock("yuzu_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).requiresCorrectToolForDrops()), ModCreativeModeTab.AMT3_TAB);
-    public static final RegistryObject<Block> YUZU_LEAVES = registerBlock("yuzu_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
-                @Override
-                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return true;
-                }
-
-                @Override
-                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 30;
-                }
-
-                @Override
-                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 60;
-                }
-            }, ModCreativeModeTab.AMT3_TAB);
+    public static final RegistryObject<Block> YUZU_LEAVES = registerBlock("yuzu_leaves", () -> new YuzuLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES), ModItems.YUZU), ModCreativeModeTab.AMT3_TAB);
     public static final RegistryObject<Block> YUZU_SAPLING = registerBlock("yuzu_sapling",
             () -> new SaplingBlock(new YuzuTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.AMT3_TAB);
     public static final RegistryObject<Block> TEA_SAPLING = registerBlock("tea_sapling",
